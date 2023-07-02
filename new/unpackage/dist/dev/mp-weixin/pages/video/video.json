@@ -1,0 +1,11 @@
+{
+  "disableScroll": true,
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "t-search": "../../wxcomponents/TDesign/miniprogram_dist/search/search",
+    "ax-top-nav": "../../components/ax-topNav/ax-topNav",
+    "ax-tab-bar": "../../components/ax-tabBar/ax-tabBar",
+    "ax-flash": "../../components/ax-Flash/ax-Flash"
+  }
+}

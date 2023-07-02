@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "disableScroll": true,
+  "usingComponents": {
+    "ax-top-nav": "../../components/ax-topNav/ax-topNav",
+    "ax-tab-bar": "../../components/ax-tabBar/ax-tabBar",
+    "calendar": "../../components/Li-Calendar/Li-Calendar"
+  }
+}

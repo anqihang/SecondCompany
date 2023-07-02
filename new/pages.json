@@ -1,0 +1,226 @@
+{
+
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		// {
+		// 	"path": "pages/home/home",
+		// 	"style": {
+		// 		"disableScroll": true,
+		// 		"navigationBarTitleText": "home",
+		// 		"enablePullDownRefresh": false
+		// 	}
+		// }, {
+		// 	"path": "pages/home1/home1",
+		// 	"style": {
+		// 		"disableScroll": true,
+		// 		"navigationBarTitleText": "home1",
+		// 		"enablePullDownRefresh": false
+		// 	}
+		// }, 
+		{
+			"path": "pages/article/article",
+			"style": {
+				"disableScroll": true,
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		}, {
+			"path": "pages/category/category",
+			"style": {
+				"disableScroll": true,
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		}, {
+			"path": "pages/video/video",
+			"style": {
+				"disableScroll": true,
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"usingComponents": {
+					"t-search": "/wxcomponents/TDesign/miniprogram_dist/search/search"
+				},
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		}, {
+			"path": "pages/homeIndex/homeIndex",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"disableScroll": true,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/calendar/calendar",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"disableScroll": true,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+
+		}
+	],
+	//分包加载配置
+	"subPackages": [{
+		"root": "pages_details",
+		"pages": [{
+				"path": "article_details/article_details",
+				"style": {
+					"disableScroll": true,
+					"enablePullDownRefresh": false,
+					"usingComponents": {
+						"canvasdrawer": "/wxcomponents/canvasdrawer/canvasdrawer"
+					},
+					"app-plus": {
+						"bounce": "none"
+					}
+				}
+			},
+			{
+				"path": "SearchList/SearchList",
+				"style": {
+					"disableScroll": true,
+					"navigationBarTitleText": "search_list",
+					"enablePullDownRefresh": false,
+					"app-plus": {
+						"bounce": "none"
+					}
+				}
+			}, {
+				"path": "video_details/video_details",
+				"style": {
+					"disableScroll": true,
+					"navigationBarTitleText": "video_details",
+					"enablePullDownRefresh": false,
+					"usingComponents": {
+						// "player-component": "plugin://player/video",
+						"t-popup": "/wxcomponents/TDesign/miniprogram_dist/popup/popup",
+						"txv-video": "plugin://tencentvideo/video",
+						"t-progress": "/wxcomponents/TDesign/miniprogram_dist/progress/progress",
+						"t-swiper": "/wxcomponents/TDesign/miniprogram_dist/swiper/swiper",
+						"t-swiper-nav": "/wxcomponents/TDesign/miniprogram_dist/swiper-nav/swiper-nav"
+					},
+					"app-plus": {
+						"bounce": "none"
+					}
+				}
+			}, {
+				"path": "videoDetails/videoDetails",
+				"style": {
+					"disableScroll": true,
+					"navigationBarTitleText": "videoDetails",
+					"enablePullDownRefresh": false,
+					"app-plus": {
+						"bounce": "none"
+					}
+				}
+			},
+			{
+				"path": "webview/webview",
+				"style": {
+					"navigationBarTitleText": "",
+					"app-plus": {
+						"bounce": "none"
+					}
+				}
+			}
+		],
+		"plugins": {
+			// "player": {
+			// 	"version": "2.1.15",
+			// 	"provider": "wxa75efa648b60994b"
+			// }
+
+			"tencentvideo": {
+				"version": "1.4.0",
+				"provider": "wxa75efa648b60994b"
+			}
+		}
+
+	}],
+	//全局样式
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff",
+		//自定义顶部导航栏样式
+		"navigationStyle": "custom",
+		"usingComponents": {
+			"t-button": "/wxcomponents/TDesign/miniprogram_dist/button/button",
+			"t-search": "/wxcomponents/TDesign/miniprogram_dist/search/search",
+			"t-image": "/wxcomponents/TDesign/miniprogram_dist/image/image",
+			"t-divider": "/wxcomponents/TDesign/miniprogram_dist/divider/divider",
+			"t-icon": "/wxcomponents/TDesign/miniprogram_dist/icon/icon",
+			"t-tabs": "/wxcomponents/TDesign/miniprogram_dist/tabs/tabs",
+			"t-tab-panel": "/wxcomponents/TDesign/miniprogram_dist/tab-panel/tab-panel"
+		}
+	},
+	//权限控制
+	"uniIdRouter": {},
+	//底部导航
+	"tabBar": {
+		"color": "#fff",
+		"selectedColor": "#fff",
+		"backgroundColor": "#ffffff",
+		"height": "0px",
+		"borderStyle": "white",
+		//至少有两个对象
+		"list": [
+			// {
+			// 	"pagePath": "pages/index/index",
+			// 	"text": "启动页"
+			// 	// "iconPath": "static/icon/基础管理.png"
+			// },
+			// {
+			// 	"pagePath": "pages/home/home",
+			// 	"text": "首页"
+			// 	// "iconPath": "static/icon/基础管理.png"
+			// },
+			// {
+			// 	"pagePath": "pages/home1/home1",
+			// 	"text": "首页1"
+			// },
+			{
+				"pagePath": "pages/homeIndex/homeIndex",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/category/category",
+				"text": "分类搜索"
+				// "iconPath": "static/icon/基础管理.png"
+			},
+			{
+				"pagePath": "pages/article/article",
+				"text": "美文"
+				// "iconPath": "static/icon/基础管理.png"
+			}, {
+				"pagePath": "pages/video/video",
+				"text": "视频"
+			},
+			{
+				"pagePath": "pages/calendar/calendar",
+				"text": "万年历"
+			}
+		]
+	}
+}

@@ -1,0 +1,13 @@
+{
+  "disableScroll": true,
+  "navigationBarTitleText": "video_details",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "t-popup": "../../wxcomponents/TDesign/miniprogram_dist/popup/popup",
+    "txv-video": "plugin://tencentvideo/video",
+    "t-progress": "../../wxcomponents/TDesign/miniprogram_dist/progress/progress",
+    "t-swiper": "../../wxcomponents/TDesign/miniprogram_dist/swiper/swiper",
+    "t-swiper-nav": "../../wxcomponents/TDesign/miniprogram_dist/swiper-nav/swiper-nav",
+    "ax-top-nav": "../../components/ax-topNav/ax-topNav"
+  }
+}

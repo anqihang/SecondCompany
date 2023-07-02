@@ -1,0 +1,9 @@
+{
+  "disableScroll": true,
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "canvasdrawer": "../../wxcomponents/canvasdrawer/canvasdrawer",
+    "ax-top-nav": "../../components/ax-topNav/ax-topNav",
+    "ax-tab-bar": "../../components/ax-tabBar/ax-tabBar"
+  }
+}

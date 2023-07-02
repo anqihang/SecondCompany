@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ax-flash-get": "../ax-flashGet/ax-flashGet"
+  }
+}

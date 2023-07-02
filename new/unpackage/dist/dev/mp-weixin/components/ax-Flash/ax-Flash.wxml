@@ -1,0 +1,1 @@
+<view><view wx:for="{{a}}" wx:for-item="item" wx:key="c" class=""><ax-flash-get wx:if="{{item.b}}" class="flash" u-i="{{item.a}}" bind:__l="__l" u-p="{{item.b}}"></ax-flash-get></view></view>
